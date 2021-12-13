@@ -8,14 +8,14 @@ namespace Hybrid.Providers.Asymmetric
 {
     public class AsymmetricProvider : IProvider
     {
-        private byte[] EncryptData(byte[] data, string publicKey, int keySize = 4096)
+        private byte[] EncryptData(byte[] data, string publicKey, int keySize = 7680)
         {
             using RSACryptoServiceProvider provider = new RSACryptoServiceProvider(keySize);
             provider.FromXmlString(publicKey);
             return provider.Encrypt(data, true);
         }
 
-        private byte[] DecryptData(byte[] data, string privateKey, int keySize = 4096)
+        private byte[] DecryptData(byte[] data, string privateKey, int keySize = 7680)
         {
             using RSACryptoServiceProvider provider = new RSACryptoServiceProvider(keySize);
             provider.FromXmlString(privateKey);

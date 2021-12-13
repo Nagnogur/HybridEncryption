@@ -52,6 +52,9 @@ namespace HybridEncrypt
 
             app.UseCors();
 
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

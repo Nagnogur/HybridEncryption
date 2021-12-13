@@ -34,7 +34,7 @@ namespace Hybrid.Keys
         {
             if (!File.Exists(_privateKeyPath))
             {
-                var keys = GenerateNewKeys(4096);
+                var keys = GenerateNewKeys();
                 WritePublicKey(_publicKeyPath, keys.PublicKey);
                 WritePrivateKey(_privateKeyPath, keys.PrivateKey, _privateKeyPassword);
             }
@@ -49,7 +49,7 @@ namespace Hybrid.Keys
             }
             if (!File.Exists(_privateKeyPath))
             {
-                var keys = GenerateNewKeys(4096);
+                var keys = GenerateNewKeys();
                 WritePublicKey(_publicKeyPath, keys.PublicKey);
                 WritePrivateKey(_privateKeyPath, keys.PrivateKey, privateKeyPassword);
             }
@@ -95,7 +95,7 @@ namespace Hybrid.Keys
         {
             return File.ReadAllText(publicKeyFilePath);
         }
-        public KeyPair GenerateNewKeys(int keySize = 4096)
+        public KeyPair GenerateNewKeys(int keySize = 7680)
         {
             using RSACryptoServiceProvider rsa = new RSACryptoServiceProvider(keySize);
             return new KeyPair
