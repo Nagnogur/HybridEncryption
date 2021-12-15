@@ -10,24 +10,6 @@ namespace HybridEncryptTest
 {
     public class Tests
     {
-        /*[TestCase("1 test string To EnCrypt!8")]
-        [TestCase("")]
-        [TestCase("avisjdkcampuwewergwreao,pldcsop0relpc[.d;alp,afu8rigme84re0kcok")]
-        public void HybridEncrypt_ValidData_RightKeyLength(string text)
-        {
-            // arrange
-            HybridProvider provider = new HybridProvider();
-            int expectedKeySize = 684;
-            int expectedIVSize = 684;
-
-            // act
-            SymmetricTextModel encrypted = provider.HybridEncryption(text);
-
-            // assert
-            Assert.AreEqual(expectedKeySize, encrypted.Key.Length);
-            Assert.AreEqual(expectedIVSize, encrypted.IV.Length);
-        }*/
-
         [TestCase("1 test string To EnCrypt!8")]
         [TestCase("")]
         [TestCase("avisjdkcampuwewergwreao,pldcsop0relpc[.d;alp,afu8rigme84re0kcok")]

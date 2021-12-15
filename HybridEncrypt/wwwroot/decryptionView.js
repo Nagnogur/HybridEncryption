@@ -117,7 +117,7 @@ export function DecryptionView() {
   
   
 async function Decrypt(inputText, inputKey, inputIV){
-    const url = 'https://localhost:44374/decrypt';
+    const url = '/decrypt';
     const data = {"Text": inputText,
                   "Key": inputKey,
                   "IV": inputIV}

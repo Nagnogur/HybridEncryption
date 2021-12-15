@@ -143,7 +143,7 @@ export function EncryptionView() {
   
   
   async function Encrypt(input){
-    const url = 'https://localhost:44374/encrypt';
+    const url = '/encrypt';
     const data = {"Text":input}
     const response = await fetch(url, {
         method: 'POST',

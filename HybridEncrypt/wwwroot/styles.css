@@ -59,38 +59,3 @@ textarea {
 #radio {
     margin-left: 5px;
 }
-/*body {
-    display: flex;
-    flex-direction: column;
-}
-
-#input1 {
-    width: 45em;
-    height: 10em;
-}
-
-#outputText {
-    width: 20em;
-    height: 2em;
-}
-
-.output {
-    width: 50em;
-    height: 15em;
-}
-
-#button {
-    width: 6em;
-    margin-left: 39em;
-}
-
-input {
-    text-align: left;
-
-}
-
-label{
-    vertical-align: top;
-    text-align: center;
-    width: 5em;
-}/*
